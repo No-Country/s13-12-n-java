@@ -9,12 +9,13 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration /*la clase con esta configuracipon tiene la capacidad de crear bines, los cuales forman parte de la aplication context de spring/springboot*/
 public class OpenApiConfig {
+    // Para ingresar a la documentación de la API, se debe ingresar a la URL: http://localhost:8080/swagger-ui/index.html#/
     @Bean
     public OpenAPI OngAPI() {
         final String securitySchemeName = "bearerAuth";
         return new OpenAPI()
                 .info(new Info()
-                        .title("Inventario")
+                        .title("Atlantis Inventory")
                         .description("La API REST de La App de Inventarios.")
                         .version("v1"))
                 .externalDocs(new ExternalDocumentation()
