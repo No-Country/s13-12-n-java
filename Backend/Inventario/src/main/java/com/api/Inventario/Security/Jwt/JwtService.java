@@ -25,15 +25,19 @@ public class JwtService {
         return getToken(new HashMap<>(), user);
     }
 
-    private String getToken(Map<String,Object> extraClaims, UserDetails user) {
+
+
+    private String getToken(Map<String, Object> extraClaims, UserDetails user) {
         return Jwts
-            .builder()
-            .setClaims(extraClaims)
-            .setSubject(user.getUsername())
-            .setIssuedAt(new Date(System.currentTimeMillis()))
-            .setExpiration(new Date(System.currentTimeMillis()+1000*86400))
-            .signWith(getKey(), SignatureAlgorithm.HS256)
-            .compact();
+                .builder()
+                .addClaims(extraClaims)
+
+                .setSubject(user.getUsername())
+                .setIssuer( user.getAuthorities().toString())
+                .setIssuedAt(new Date(System.currentTimeMillis()))
+                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 86400))
+                .signWith(getKey(), SignatureAlgorithm.HS256)
+                .compact();
     }
 
     private Key getKey() {
@@ -47,7 +51,7 @@ public class JwtService {
 
     public boolean isTokenValid(String token, UserDetails userDetails) {
         final String username=getUsernameFromToken(token);
-        return (username.equals(userDetails.getUsername())&& !isTokenExpired(token));
+        return (username.equals(userDetails.getUsername())  && !isTokenExpired(token));
     }
 
     private Claims getAllClaims(String token)
