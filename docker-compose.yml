@@ -28,8 +28,8 @@ services:
       - DB_SSL=${DB_SSL}
       - JWT_SECRET=${JWT_SECRET}
     restart: unless-stopped
-    # networks:
-    #   - external_network
+    networks:
+      - external_network
 
   # frontend:
   #   build:
@@ -46,6 +46,6 @@ services:
   #   restart: unless-stopped
   # networks:
   #   - external_network
-# networks:
-#   external_network:
-#     external: true
+networks:
+  external_network:
+    external: true
