@@ -11,6 +11,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -24,11 +25,25 @@ public class Users implements UserDetails {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
     String email;
-    String apellido;
-    String nombre;
-    String pais;
+    String lastName;
+    String name;
+    String country;
     String password;
+
+
     
+//    Date birthDate;
+//    String address;
+//    String phone;
+//    String email;
+//    String startDat;
+//
+//    String schedule;
+//    String salary;
+
+
+
+
     @Enumerated(EnumType.STRING)
     Role role;
 
