@@ -1,0 +1,18 @@
+.cont-movements{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    max-width: 300px;
+}
+.img-last-movements{
+    width: 45px;
+}
+.h1-title-last-movements{
+    font-size: 24px;
+}
+.h2-title-product{
+    font-size: 16px;
+}
+.p-product-d{
+    font-size: 12px;
+}
