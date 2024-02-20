@@ -1,15 +1,24 @@
 import { useState } from 'react'
 import './App.css'
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Dashboard from './pages/dashboard/Dashboard';
+import Navbar from './components/Navbar';
+import Activity from './pages/activity/Activity';
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div className="text-3xl font-bold underline">
-        HOLA
-      </div>
-    </>
+    <Router>
+      <Navbar></Navbar>
+      <Routes>
+        <Route path='/' element={<Dashboard/>}>
+          <Route path='/activity' component={<Activity/>} />
+        </Route>
+        <Route path='*' element={<h1>Error 404. Page not found</h1>}></Route>
+      </Routes>
+      
+    </Router>
   )
 }
 
