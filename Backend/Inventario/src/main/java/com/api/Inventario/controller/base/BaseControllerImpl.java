@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-
 public class BaseControllerImpl<RESPONSE,REQUEST,ID,ENTITY extends Base,S extends BaseServiceImpl<RESPONSE,REQUEST,ID,ENTITY>>{
 	Logger logger = LoggerFactory.getLogger(BaseServiceImpl.class);
 	@Autowired
@@ -21,20 +20,16 @@ public class BaseControllerImpl<RESPONSE,REQUEST,ID,ENTITY extends Base,S extend
 	@Secured("COMPRADOR")
 	@PostMapping("/create")
 	public ResponseEntity<RESPONSE> create(@RequestBody REQUEST request) {
-		System.out.println("32323323232323233   :" + request);
 		RESPONSE newEntity= service.create(request);
 		return new ResponseEntity(newEntity, HttpStatus.CREATED);
 	}
-
 	public RESPONSE getById(ID id) {
 		return null;
 	}
 
-
 	public List<RESPONSE> getAll() {
 		return null;
 	}
-
 
 	public RESPONSE update(ID id, REQUEST request) {
 		return null;
