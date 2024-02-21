@@ -1,16 +1,16 @@
 package com.api.Inventario.service;
 
-import com.api.Inventario.models.dto.entity.Tiket;
-import com.api.Inventario.models.dto.request.TiketRequest;
+import com.api.Inventario.models.dto.entity.Ticket;
+import com.api.Inventario.models.dto.request.TicketRequest;
 import com.api.Inventario.models.dto.response.TicketResponse;
 import com.api.Inventario.repository.base.BaseRepository;
 import com.api.Inventario.service.base.BaseServiceImpl;
 import org.springframework.stereotype.Service;
 
 @Service
-public class TiketServiceImpl extends BaseServiceImpl<TicketResponse, TiketRequest,Long,Tiket> {
+public class TicketServiceImpl extends BaseServiceImpl<TicketResponse, TicketRequest,Long,Ticket> {
 
-	public TiketServiceImpl(BaseRepository<Tiket,Long> baseRepository) {
+	public TicketServiceImpl(BaseRepository<Ticket,Long> baseRepository) {
 		super(baseRepository);
 	}
 

@@ -13,10 +13,15 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "tiket")
-public class Tiket extends Base {
+public class Ticket extends Base {
 
 
 private String name;
 
-
+	@Override
+	public String toString() {
+		return "Tiket{" +
+				"name='" + name + '\'' +
+				'}';
+	}
 }
