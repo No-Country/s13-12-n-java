@@ -1,9 +1,11 @@
 package com.api.Inventario.context.exception;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 @Data
 @Builder
+@Getter @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class MessageResponse {
 	 private String message;
 }
