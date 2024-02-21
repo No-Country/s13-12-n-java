@@ -1,5 +1,6 @@
 package com.api.Inventario.service.base;
-import com.api.Inventario.models.dto.entity.Tiket;
+import com.api.Inventario.models.dto.entity.Ticket;
+
 import com.api.Inventario.models.dto.entity.base.Base;
 import com.api.Inventario.repository.base.BaseRepository;
 import org.modelmapper.ModelMapper;
@@ -14,7 +15,7 @@ public   class BaseServiceImpl<RESPONSE,REQUEST,ID,ENTITY extends  Base> impleme
 	 BaseRepository<ENTITY,ID> baseRepository;
 	@Autowired
 	private  ModelMapper modelMapper;
-	public BaseServiceImpl(BaseRepository<Tiket, Long> baseRepository) {
+	public BaseServiceImpl(BaseRepository<Ticket, Long> baseRepository) {
 	}
 	@Override
 	public RESPONSE create(REQUEST request) {
