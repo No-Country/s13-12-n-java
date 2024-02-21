@@ -40,8 +40,11 @@ public class BaseControllerImpl<RESPONSE,REQUEST,ID,ENTITY extends Base,S extend
 	@PutMapping("/update/{id}")
 	public ResponseEntity<RESPONSE> update(@PathVariable ID id, @RequestBody REQUEST request) {
 		RESPONSE  updateEntity = service.update(id,request);
+		System.out.println(updateEntity);
 		if (updateEntity != null) {
-			return ( new ResponseEntity("update", HttpStatus.OK));
+			logger.info("se modifico enntidad",request);
+			return ( new ResponseEntity(new MessageResponse("update"), HttpStatus.OK));
+
 		} else {
 			return new ResponseEntity(new MessageResponse("you  haven't update your info"),HttpStatus.NOT_FOUND);
 		}
