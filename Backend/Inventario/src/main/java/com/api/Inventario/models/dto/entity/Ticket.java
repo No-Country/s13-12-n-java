@@ -18,10 +18,5 @@ public class Ticket extends Base {
 
 private String name;
 
-	@Override
-	public String toString() {
-		return "Tiket{" +
-				"name='" + name + '\'' +
-				'}';
-	}
+
 }
