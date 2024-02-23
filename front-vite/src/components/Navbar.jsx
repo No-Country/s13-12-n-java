@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavElem from "./NavElem";
 
-export default function Navbar() {
+export default function Navbar( {Class} ) {
   const links = [
     { name: "Dashboard", path: "/" },
     { name: "Inventario", path: "/inventory" },
@@ -13,7 +13,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className={`fixed top-0 left-0 z-40 min-w-64 bg-blue text-white flex flex-col text-center justify-between h-screen lg:static`}>
+    <div className={`fixed top-0 left-0 z-40 w-64 bg-blue text-white flex flex-col text-center justify-between min-h-screen lg:static ${Class}`}>
       <div className="flex flex-col mt-16 items-center">
         <img
           src="/images/img-prueba.jpg"
