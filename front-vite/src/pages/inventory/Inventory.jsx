@@ -14,7 +14,7 @@ const productos = [
 
 const App = () => {
   return (
-    <div className='m-4'>
+    <div className='m-4 absolute'>
       <h1 className='text-3xl'>Inventario</h1>
       <ProductTable productos={productos} />
     </div>

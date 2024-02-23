@@ -4,14 +4,12 @@ import ProductInventory from './ProductInventory';
 const ProductTable = ({ productos }) => {
   const [isCheckedAll, setIsCheckedAll] = useState(false);
 
-  // Manejar cambio del checkbox de la cabecera
   const handleCheckboxChangeAll = () => {
     const updatedProducts = productos.map(producto => ({ ...producto, isChecked: !isCheckedAll }));
     setIsCheckedAll(!isCheckedAll);
     setIsCheckedAll(updatedProducts);
   };
 
-  // Manejar cambio del checkbox de cada fila
   const handleRowCheckboxChange = (index) => {
     const updatedProducts = [...productos];
     updatedProducts[index].isChecked = !updatedProducts[index].isChecked;

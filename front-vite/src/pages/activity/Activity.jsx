@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function Activity() {
   return (
-    <div>Activity</div>
+    <h1>Activityssvityssvityssvityssvityssvityssvityssvityssvityssvityssvityssvityssvitysssssssss</h1>
   )
 }
