@@ -21,7 +21,7 @@ export default {
       'light-gray': '#D0D0D0',
       'dark-gray': '#444444',
       'black': '#000000'
-    }
+    }, 
   },
   plugins: [],
 }

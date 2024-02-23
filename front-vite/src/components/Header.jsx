@@ -25,20 +25,7 @@ export default function Header() {
         </div>
       </header>
       {isClicked && isMobile ? <Navbar></Navbar> : ""}
-      {!isMobile && 
-      <div className="flex">
-        <Navbar></Navbar> 
-        <header className="flex justify-between w-full pl-4 h-16 items-center">
-          <h1 className="flex-shrink-0">LOGO</h1>
-          <div className="flex justify-center">
-          <input
-            type="search"
-            placeholder="Busque su producto aquí"
-            className="h-11 rounded-full w-56 placeholder:px-4"
-          ></input>
-      </div>
-        </header>
-      </div>}
+      
     </div>
   );
 }
