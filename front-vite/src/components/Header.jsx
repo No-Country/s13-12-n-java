@@ -21,7 +21,7 @@ export default function Header() {
         </button>}
         <div className="flex items-center">
             <img className="w-6" src="/images/isotipo.svg" />
-            <span className="pl-2 font-logo text-xl pt-1">ATLANTIS</span>
+            <span className="pl-2 font-logo text-xl pt-1 text-blue">ATLANTIS</span>
         </div>
       </header>
       {isClicked && isMobile ? <Navbar></Navbar> : ""}
