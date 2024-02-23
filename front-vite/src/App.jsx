@@ -17,7 +17,7 @@ function App() {
         {!isMobile && <Navbar Class='lg:col-span-1'></Navbar>}
         <div className="lg:col-span-2 xl:col-span-3">
           {isMobile ? <Header></Header> : <Topbar />}
-          <div className="lg:col-span-2 xl:grid-span-3 lg:-ml-6 xl:ml-1">
+          <div className="lg:col-span-2 xl:grid-span-3 lg:-ml-6 xl:ml-1 2xl:-ml-20">
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/activity" element={<Activity />} />

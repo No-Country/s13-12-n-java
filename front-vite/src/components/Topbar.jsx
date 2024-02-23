@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 
 export default function Topbar() {
   return (
-    <div className="lg:-ml-10 xl:ml-1 flex">
+    <div className="lg:-ml-10 xl:-ml-2 2xl:-ml-24 flex">
       <header className="flex justify-between w-full pl-4 h-16 items-center">
         <h1 className="flex-shrink-0">LOGO</h1>
         <div className="flex justify-center">
