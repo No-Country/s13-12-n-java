@@ -1,8 +1,8 @@
 package com.api.Inventario.service.Ticket;
 
-import com.api.Inventario.models.dto.entity.Ticket;
-import com.api.Inventario.models.dto.request.TicketRequest;
-import com.api.Inventario.models.dto.response.TicketResponse;
+import com.api.Inventario.model.entity.Ticket;
+import com.api.Inventario.model.dto.request.TicketRequest;
+import com.api.Inventario.model.dto.response.TicketResponse;
 import com.api.Inventario.repository.base.BaseRepository;
 import com.api.Inventario.service.base.BaseServiceImpl;
 import org.springframework.stereotype.Service;

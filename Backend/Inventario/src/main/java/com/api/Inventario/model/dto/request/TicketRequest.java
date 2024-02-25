@@ -1,4 +1,4 @@
-package com.api.Inventario.models.dto.request;
+package com.api.Inventario.model.dto.request;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

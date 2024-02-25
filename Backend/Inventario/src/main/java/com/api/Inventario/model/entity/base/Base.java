@@ -1,4 +1,4 @@
-package com.api.Inventario.models.dto.entity.base;
+package com.api.Inventario.model.entity.base;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

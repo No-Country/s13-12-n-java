@@ -1,6 +1,6 @@
-package com.api.Inventario.models.dto.entity;
+package com.api.Inventario.model.entity;
 
-import com.api.Inventario.models.dto.entity.base.Base;
+import com.api.Inventario.model.entity.base.Base;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
