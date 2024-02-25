@@ -1,6 +1,6 @@
 package com.api.Inventario.repository;
 
-import com.api.Inventario.models.dto.entity.Product;
+import com.api.Inventario.model.entity.Product;
 import com.api.Inventario.repository.base.BaseRepository;
 import org.springframework.stereotype.Repository;
 

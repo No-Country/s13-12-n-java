@@ -1,4 +1,4 @@
-package com.api.Inventario.models.dto.response;
+package com.api.Inventario.model.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
