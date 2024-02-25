@@ -23,6 +23,6 @@ export default {
       'black': '#000000'
     }, 
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 
