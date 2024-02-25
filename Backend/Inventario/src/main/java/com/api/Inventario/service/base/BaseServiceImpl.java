@@ -1,6 +1,5 @@
 package com.api.Inventario.service.base;
-import com.api.Inventario.models.dto.entity.Ticket;
-import com.api.Inventario.models.dto.entity.base.Base;
+import com.api.Inventario.model.entity.base.Base;
 import com.api.Inventario.repository.base.BaseRepository;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
@@ -16,7 +15,7 @@ public   class BaseServiceImpl<RESPONSE,REQUEST,ID,ENTITY extends  Base> impleme
 	@Autowired
 	private  ModelMapper modelMapper;
 
-	public BaseServiceImpl(BaseRepository<Ticket, Long> baseRepository) {
+	public BaseServiceImpl(BaseRepository<ENTITY, Long> baseRepository) {
 	}
 	@Override
 	public RESPONSE create(REQUEST request) {

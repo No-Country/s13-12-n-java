@@ -1,6 +1,6 @@
 package com.api.Inventario.controller.base;
 import com.api.Inventario.context.exception.MessageResponse;
-import com.api.Inventario.models.dto.entity.base.Base;
+import com.api.Inventario.model.entity.base.Base;
 import com.api.Inventario.service.base.BaseServiceImpl;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
@@ -18,25 +18,25 @@ public class BaseControllerImpl<RESPONSE,REQUEST,ID,ENTITY extends Base,S extend
 	@Autowired
 	protected S service;
 
-	@Secured("VENDEDOR")
+	@Secured({"VENDEDOR","ADMIN"})
 	@PostMapping("/create")
 	public ResponseEntity<RESPONSE> create( @Valid @RequestBody REQUEST request) {
 		RESPONSE newEntity= service.create(request);
 		return new ResponseEntity(newEntity, HttpStatus.CREATED);
 	}
-	@Secured("VENDEDOR")
+	@Secured({"VENDEDOR","ADMIN"})
 	@GetMapping("/find/{id}")
 	public ResponseEntity<RESPONSE> getById(@PathVariable ID id) {
 		RESPONSE entity = service.getById(id);
 		return new ResponseEntity(entity, HttpStatus.OK);
 	}
-	@Secured("VENDEDOR")
+	@Secured({"VENDEDOR","ADMIN"})
 	@GetMapping("")
 	public ResponseEntity<List<RESPONSE>> getAll() {
 		List<RESPONSE> entity= service.getAll();
 		return new ResponseEntity<>(entity , HttpStatus.OK);
 	}
-	@Secured("VENDEDOR")
+	@Secured({"VENDEDOR","ADMIN"})
 	@PutMapping("/update/{id}")
 	public ResponseEntity<RESPONSE> update(@PathVariable ID id, @RequestBody REQUEST request) {
 		RESPONSE  updateEntity = service.update(id,request);
