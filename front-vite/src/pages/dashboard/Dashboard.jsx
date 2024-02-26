@@ -2,92 +2,69 @@ import React from "react";
 import IndexPage from "../../components/ProductosLast";
 import { useMediaQuery } from "react-responsive";
 import Shortcuts from "../../components/Shortcuts";
+import CardsInfo from "../../components/CardsInfo";
+import InfoCard from "../../components/InfoCard";
 
 export default function Dashboard() {
   const isMobile = useMediaQuery({ maxWidth: 1023 });
+  const cardsMobile = [
+    { icon: "paid", title: "Ventas", amount: "$100000" },
+    { icon: "show_chart", title: "Ganancia", amount: "$50000" },
+    { icon: "sell", title: "Stock vendido", amount: "20%" },
+    { icon: "inventory_2", title: "Total Productos", amount: 10000 },
+    { icon: "local_shipping", title: "En camino", amount: 70 },
+    { icon: "quick_reorder", title: "Ingresados", amount: 50 },
+    { icon: "shopping_cart", title: "Compras", amount: "$60000" },
+    { icon: "inventory", title: "Órdenes", amount: 2 },
+    { icon: "receipt_long", title: "Deudas", amount: "$20000" },
+  ];
+
+  const shortcutsIcons = ['add_business', 'note_add', 'person_add', 'category']
+
   return (
-    <div>
-      <div className="xl:grid grid-cols-3 xl:max-w-screen xl:mt-8">
-        <div className="col-span-2">
-          <h1 className="text-center lg:text-left text-xl">HOY</h1>
-          <div className="carousel rounded-box max-w-screen mx-6 lg:hidden">
-            <div className="carousel-item w-1/2">
-              <img
-                src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
-                className="w-full"
-              />
-            </div>
-            <div className="carousel-item w-1/2">
-              <img
-                src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
-                className="w-full"
-              />
-            </div>
-            <div className="carousel-item w-1/2">
-              <img
-                src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-                className="w-full"
-              />
-            </div>
-            <div className="carousel-item w-1/2">
-              <img
-                src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg"
-                className="w-full"
-              />
-            </div>
-            <div className="carousel-item w-1/2">
-              <img
-                src="https://daisyui.com/images/stock/photo-1550258987-190a2d41a8ba.jpg"
-                className="w-full"
-              />
-            </div>
-            <div className="carousel-item w-1/2">
-              <img
-                src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg"
-                className="w-full"
-              />
-            </div>
-            <div className="carousel-item w-1/2">
-              <img
-                src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg"
-                className="w-full"
-              />
-            </div>
+      <div className="xl:grid xl:grid-cols-3 max-h-screen flex flex-col items-center">
+        <div className="xl:col-span-2 xl:mt-5">
+          <h1 className="text-center lg:text-left text-2xl mb-2.5">Hoy</h1>
+          <div className="carousel max-w-sm p-4 space-x-4 lg:hidden">
+            {cardsMobile.map((card) => (
+              <div className="carousel-item" key={card.title}>
+                <InfoCard {...card} />
+              </div>
+            ))}
           </div>
-          {!isMobile && (
-            <div>
-              <div>COMPONENTE DANIEL</div>
-            </div>
-          )}
+          {!isMobile && <CardsInfo/>}
           <div className="flex justify-center gap-4 mt-2 lg:hidden">
-            <button className="bg-light-blue rounded-xl w-14 h-14">
-              {" "}
-              {/* pasar a una lista de objetos para mapear */}
-              <span className="text-white">ICON</span>
+            {/* {shortcutsIcons.map((icon) => {
+              <button className="bg-light-blue rounded-xl w-14 h-14">
+                <span className="text-white material-symbols-rounded">{icon}</span>
+              </button>
+            })} */}
+            <button className="bg-light-blue rounded-xl w-14 h-14 flex items-center justify-center">
+              <span className="text-white material-symbols-rounded">add_business</span>
             </button>
-            <button className="bg-light-blue rounded-xl w-14 h-14">
-              <span className="text-white">ICON</span>
+            <button className="bg-light-blue rounded-xl w-14 h-14 flex items-center justify-center">
+              <span className="text-white material-symbols-rounded">note_add</span>
             </button>
-            <button className="bg-light-blue rounded-xl w-14 h-14">
-              <span className="text-white">ICON</span>
+            <button className="bg-light-blue rounded-xl w-14 h-14 flex items-center justify-center">
+              <span className="text-white material-symbols-rounded">person_add</span>
             </button>
-            <button className="bg-light-blue rounded-xl w-14 h-14">
-              <span className="text-white">ICON</span>
+            <button className="bg-light-blue rounded-xl w-14 h-14 flex items-center justify-center">
+              <span className="text-white material-symbols-rounded">category</span>
             </button>
           </div>
           <div className="flex justify-center items-center">
             <div className="bg-white h-64 my-6 w-96 md:w-full md:mx-10 lg:mr-12 lg:ml-2">GRÁFICO</div>
           </div>
         </div>
-        <div className="col-span-1 flex flex-col items-center">
+        <div className="xl:col-span-1 flex flex-col items-center xl:mt-8">
           {!isMobile && (
             <div className="bg-semi-white flex flex-col w-80 items-center justify-center p-7 rounded-3xl">
               <h2 className="mb-6 text-2xl">Accesos Rápidos</h2>
               <div className="grid grid-cols-2 gap-6 gap-y-6">
-                <Shortcuts label={"Crear Producto"}></Shortcuts>
-                <Shortcuts label={"Nueva Orden"}></Shortcuts>
-                <Shortcuts label={"Nuevo Empleado"}></Shortcuts>
-                <Shortcuts label={"Nueva Categoría"}></Shortcuts>
+                <Shortcuts label={"Crear Producto"} icon='add_business'></Shortcuts>
+                <Shortcuts label={"Nueva Orden"} icon='note_add'></Shortcuts>
+                <Shortcuts label={"Nuevo Empleado"} icon='person_add'></Shortcuts>
+                <Shortcuts label={"Nueva Categoría"} icon='category'></Shortcuts>
               </div>
             </div>
           )}
@@ -96,6 +73,5 @@ export default function Dashboard() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
