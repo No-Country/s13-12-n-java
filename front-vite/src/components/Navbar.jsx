@@ -13,7 +13,7 @@ export default function Navbar( {Class} ) {
   ];
 
   return (
-    <div className={`fixed top-0 left-0 z-40 w-64 bg-blue text-white flex flex-col text-center justify-between min-h-screen lg:static ${Class}`}>
+    <div className={`fixed top-0 left-0 z-40 w-64 bg-blue text-white flex flex-col text-center justify-between min-h-screen lg:max-h-screen lg:static ${Class}`}>
       <div className="flex flex-col mt-16 items-center">
         <img
           src="/images/img-prueba.jpg"
@@ -24,13 +24,7 @@ export default function Navbar( {Class} ) {
           <h4 className="text-sm font-extralight lg:text-base">Administrador</h4>
         </div>
       </div>
-      <div className="flex justify-center lg:hidden">
-        <input
-          type="search"
-          placeholder="Busque su producto aquí"
-          className="h-11 rounded-full w-56 placeholder:px-4"
-        ></input>
-      </div>
+      
       <nav className="flex flex-col text-center justify-center">
         <ul>
           {links.map((link, i) => (
