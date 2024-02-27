@@ -21,7 +21,10 @@ export default {
       'light-gray': '#D0D0D0',
       'dark-gray': '#444444',
       'black': '#000000',
-      'light-cyan': '#F4F5FC'
+      'light-cyan': '#F4F5FC',
+      'font-table': '#5C6F88',
+      'theme-dark': '#212529',
+      'table-comp-res': '#0A47817A',
     }
   },
   plugins: [],

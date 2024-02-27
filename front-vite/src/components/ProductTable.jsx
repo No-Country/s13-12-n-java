@@ -16,21 +16,30 @@ const ProductTable = ({ productos }) => {
     setIsCheckedAll(updatedProducts.every(producto => producto.isChecked));
     setIsCheckedAll(updatedProducts);
   };
-
+  
   return (
-    <table className='my-4'>
+    <table className='my-4 bg-light-cyan'>
       <thead>
         <tr>
-          <th className='border border-l-gray-800 px-5 py-3'><input type="checkbox" checked={isCheckedAll} onChange={handleCheckboxChangeAll} /></th>
-          <th className='border border-l-gray-800 px-5 py-3'>Nombre</th>
-          <th className='border border-l-gray-800 px-5 py-3'>Código</th>
-          <th className='border border-l-gray-800 px-5 py-3'>Tipo</th>
-          <th className='border border-l-gray-800 px-5 py-3'>Precio</th>
-          <th className='border border-l-gray-800 px-5 py-3'>Cantidad</th>
-          <th className='border border-l-gray-800 px-5 py-3'>Imagen</th>
+          <th className='px-5 py-3'><input type="checkbox" checked={isCheckedAll} onChange={handleCheckboxChangeAll} /></th>
+          <th className='px-5 py-3 text-font-table'>Nombre</th>
+          <th className='px-5 py-3 text-font-table'>Código</th>
+          <th className='px-5 py-3 text-font-table'>Tipo</th>
+          <th className='px-5 py-3 text-font-table'>Precio</th>
+          <th className='px-5 py-3 text-font-table'>Cantidad</th>
+          <th className='px-5 py-3 text-font-table'>Imagen</th>
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <td className='bg-white h-8'></td>
+          <td className='bg-white h-8'></td>
+          <td className='bg-white h-8'></td>
+          <td className='bg-white h-8'></td>
+          <td className='bg-white h-8'></td>
+          <td className='bg-white h-8'></td>
+          <td className='bg-white h-8'></td> 
+        </tr>
         {productos.map((producto, index) => (
           <ProductInventory
             key={index}
@@ -39,7 +48,7 @@ const ProductTable = ({ productos }) => {
             tipo={producto.tipo}
             precio={producto.precio}
             cantidad={producto.cantidad}
-            imagen={producto.imagen}
+            imagen={ producto.imagen}
             isChecked={producto.isChecked || false}
             onCheckboxChange={() => handleRowCheckboxChange(index)}
           />

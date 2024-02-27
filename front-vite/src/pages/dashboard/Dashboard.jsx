@@ -1,11 +1,11 @@
-import Navbar from '../../components/Navbar';
-import Header from '../../components/Header';
+import React from 'react'
+import Topbar from '../../components/Topbar'
 
 export default function Dashboard() {
   return (
     <div>
-      <Header/>
-      <Navbar/>
+      <h1>Dashboard</h1>
+      <h2>Actividad de hoy</h2>
     </div>
   )
 }

@@ -1,22 +1,109 @@
-import ProductTable from '../../components/ProductTable';
-
-const productos = [
-  { nombre: 'Producto 1', codigo: '001', tipo: 'Tipo 1', precio: 10, cantidad: 5, imagen: 'imagen1.jpg', isChecked: false },
-  { nombre: 'Producto 2', codigo: '002', tipo: 'Tipo 2', precio: 15, cantidad: 3, imagen: 'imagen2.jpg',isChecked: false },
-  { nombre: 'Producto 3', codigo: '003', tipo: 'Tipo 3', precio: 15, cantidad: 4, imagen: 'imagen3.jpg',isChecked: false },
-  { nombre: 'Producto 4', codigo: '004', tipo: 'Tipo 4', precio: 15, cantidad: 7, imagen: 'imagen4.jpg',isChecked: false },
-  { nombre: 'Producto 5', codigo: '005', tipo: 'Tipo 5', precio: 15, cantidad: 13, imagen: 'imagen5.jpg',isChecked: false },
-  { nombre: 'Producto 6', codigo: '006', tipo: 'Tipo 6', precio: 15, cantidad: 10, imagen: 'imagen6.jpg',isChecked: false },
-  { nombre: 'Producto 7', codigo: '007', tipo: 'Tipo 7', precio: 15, cantidad: 0, imagen: 'imagen7.jpg',isChecked: false },
-  { nombre: 'Producto 8', codigo: '008', tipo: 'Tipo 8', precio: 15, cantidad: 2, imagen: 'imagen8.jpg',isChecked: false },
-  { nombre: 'Producto 9', codigo: '009', tipo: 'Tipo 9', precio: 15, cantidad: 30, imagen: 'imagen9.jpg',isChecked: false },
-];
+import ProductTable from "../../components/ProductTable";
+import ProductTableRes from "../../components/ProductTableRes";
+import ProductosLast from "../../components/ProductosLast";
+import MediaQuery from "react-responsive";
 
 const App = () => {
+  const productos = [
+    {
+      nombre: "Producto 1",
+      codigo: "#001",
+      tipo: "Ropa",
+      precio: 10,
+      cantidad: 5,
+      imagen:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Warnweste_gelb.jpg/260px-Warnweste_gelb.jpg",
+      isChecked: false,
+    },
+    {
+      nombre: "Producto 2",
+      codigo: "#002",
+      tipo: "Ropa",
+      precio: 15,
+      cantidad: 3,
+      imagen: "/images/isotipo.svg",
+      isChecked: false,
+    },
+    {
+      nombre: "Producto 3",
+      codigo: "#003",
+      tipo: "Ropa",
+      precio: 15,
+      cantidad: 4,
+      imagen: "/images/isotipo.svg",
+      isChecked: false,
+    },
+    {
+      nombre: "Producto 4",
+      codigo: "#004",
+      tipo: "Ropa",
+      precio: 15,
+      cantidad: 7,
+      imagen: "/images/isotipo.svg",
+      isChecked: false,
+    },
+    {
+      nombre: "Producto 5",
+      codigo: "#005",
+      tipo: "Ropa",
+      precio: 15,
+      cantidad: 13,
+      imagen: "/images/isotipo.svg",
+      isChecked: false,
+    },
+    {
+      nombre: "Producto 6",
+      codigo: "#006",
+      tipo: "Ropa",
+      precio: 15,
+      cantidad: 10,
+      imagen: "/images/isotipo.svg",
+      isChecked: false,
+    },
+    {
+      nombre: "Producto 7",
+      codigo: "#007",
+      tipo: "Ropa",
+      precio: 15,
+      cantidad: 0,
+      imagen: "/images/isotipo.svg",
+      isChecked: false,
+    },
+    {
+      nombre: "Producto 8",
+      codigo: "#008",
+      tipo: "Ropa",
+      precio: 15,
+      cantidad: 2,
+      imagen: "/images/isotipo.svg",
+      isChecked: false,
+    },
+    {
+      nombre: "Producto 9",
+      codigo: "#009",
+      tipo: "Ropa",
+      precio: 15,
+      cantidad: 30,
+      imagen: "/images/isotipo.svg",
+      isChecked: false,
+    },
+  ];
+
+
   return (
-    <div className='m-4 absolute'>
-      <h1 className='text-3xl'>Inventario</h1>
-      <ProductTable productos={productos} />
+    <div className="flex items-center justify-center flex-col">
+      
+      {/* <section className="flex flex-col justify-center items-center"> */}
+        <MediaQuery minWidth={768}>
+        <h1 className="text-3xl">Inventario</h1>
+        <ProductTable productos={productos} />
+        </MediaQuery>
+        <MediaQuery maxWidth={767}>
+        <h1 className="text-3xl font-bold">Lista de Productos</h1>
+          <ProductTableRes productos={productos} />
+        </MediaQuery>
+      {/* </section> */}
+      <ProductosLast />
     </div>
   );
 };
