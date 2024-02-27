@@ -5,5 +5,6 @@ public interface BaseService <RESPONSE,REQUEST,ID>{
 	RESPONSE getById(ID id);
 	List<RESPONSE> getAll() ;
 	RESPONSE update(ID id, REQUEST  request);
-//	boolean delete(ID id);
+
+	void delete(ID id);
 }
