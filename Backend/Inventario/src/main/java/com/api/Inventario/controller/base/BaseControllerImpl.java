@@ -1,6 +1,6 @@
 package com.api.Inventario.controller.base;
 import com.api.Inventario.context.exception.MessageResponse;
-import com.api.Inventario.models.dto.entity.base.Base;
+import com.api.Inventario.model.entity.base.Base;
 import com.api.Inventario.service.base.BaseServiceImpl;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-public class BaseControllerImpl<RESPONSE,REQUEST,ID,ENTITY extends Base,S extends BaseServiceImpl<RESPONSE,REQUEST,ID,ENTITY>>{
+public abstract class BaseControllerImpl<RESPONSE,REQUEST,ID,ENTITY extends Base,S extends BaseServiceImpl<RESPONSE,REQUEST,ID,ENTITY>>{
 	Logger logger = LoggerFactory.getLogger(BaseServiceImpl.class);
 	@Autowired
 	protected S service;

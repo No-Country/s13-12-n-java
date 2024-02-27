@@ -1,4 +1,4 @@
-package com.api.Inventario.models.dto.entity.base;
+package com.api.Inventario.model.entity.base;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,8 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@AllArgsConstructor @NoArgsConstructor
 @MappedSuperclass
 public class Base {
 	@Id
