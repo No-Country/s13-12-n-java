@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'found-list-res': 'linear-gradient(to bottom right, #CED4DAA1, #64ADDEA1)',
+      })
+    },
     fontFamily: {
       'logo': ['Yanone Kaffeesatz', 'sans-serif'],
 

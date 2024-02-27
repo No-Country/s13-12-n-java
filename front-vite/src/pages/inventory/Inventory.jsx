@@ -89,20 +89,20 @@ const App = () => {
     },
   ];
 
-
   return (
-    <div className="flex items-center justify-center flex-col">
-      
-      {/* <section className="flex flex-col justify-center items-center"> */}
-        <MediaQuery minWidth={768}>
+    <div className="flex items-center justify-center flex-wrap">
+      <MediaQuery minWidth={768}>
+        <section className="m-4">
         <h1 className="text-3xl">Inventario</h1>
         <ProductTable productos={productos} />
-        </MediaQuery>
-        <MediaQuery maxWidth={767}>
-        <h1 className="text-3xl font-bold">Lista de Productos</h1>
-          <ProductTableRes productos={productos} />
-        </MediaQuery>
-      {/* </section> */}
+        </section>
+      </MediaQuery>
+
+      <MediaQuery maxWidth={767}>
+        <h1 className="text-3xl">Lista de Productos</h1>
+        <ProductTableRes productos={productos} />
+      </MediaQuery>
+
       <ProductosLast />
     </div>
   );

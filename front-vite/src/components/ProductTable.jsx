@@ -32,13 +32,7 @@ const ProductTable = ({ productos }) => {
       </thead>
       <tbody>
         <tr>
-          <td className='bg-white h-8'></td>
-          <td className='bg-white h-8'></td>
-          <td className='bg-white h-8'></td>
-          <td className='bg-white h-8'></td>
-          <td className='bg-white h-8'></td>
-          <td className='bg-white h-8'></td>
-          <td className='bg-white h-8'></td> 
+          <td className='h-8'></td>
         </tr>
         {productos.map((producto, index) => (
           <ProductInventory
