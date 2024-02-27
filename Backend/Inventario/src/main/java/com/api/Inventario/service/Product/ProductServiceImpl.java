@@ -28,4 +28,10 @@ public class ProductServiceImpl extends BaseServiceImpl<ProductResponse, Product
         }
         this.repository.deleteById(id);
     }
+
+    @Override
+    public Double calclIVA(Double price) {
+        Double productWithIVA = price+(price * 0.21);
+        return productWithIVA;
+    }
 }
