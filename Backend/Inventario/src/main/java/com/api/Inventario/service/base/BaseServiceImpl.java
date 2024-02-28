@@ -60,6 +60,12 @@ public   class BaseServiceImpl<RESPONSE,REQUEST,ID,ENTITY extends  Base> impleme
 		}
 		return (RESPONSE) new RuntimeException("fsdf");
 	}
+
+	@Override
+	public void delete(ID id) {
+
+	}
+
 	private Class<ENTITY> extractGenericType() {
 		ParameterizedType genericSuperclass = (ParameterizedType) getClass().getGenericSuperclass();
 		return (Class<ENTITY>) genericSuperclass.getActualTypeArguments()[3];
