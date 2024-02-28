@@ -1,5 +1,4 @@
 package com.api.Inventario.service.base;
-import com.api.Inventario.model.entity.Ticket;
 import com.api.Inventario.model.entity.base.Base;
 import com.api.Inventario.repository.base.BaseRepository;
 import org.modelmapper.ModelMapper;
@@ -16,7 +15,7 @@ public   class BaseServiceImpl<RESPONSE,REQUEST,ID,ENTITY extends  Base> impleme
 	@Autowired
 	private  ModelMapper modelMapper;
 
-	public BaseServiceImpl(BaseRepository<Ticket, Long> baseRepository) {
+	public BaseServiceImpl(BaseRepository<ENTITY, Long> baseRepository) {
 	}
 	@Override
 	public RESPONSE create(REQUEST request) {
@@ -59,14 +58,8 @@ public   class BaseServiceImpl<RESPONSE,REQUEST,ID,ENTITY extends  Base> impleme
 			RESPONSE response = entityToResponse(existingEntity);
 			return response ;
 		}
-		return (RESPONSE) new RuntimeException("error update");
+		return (RESPONSE) new RuntimeException("fsdf");
 	}
-
-	@Override
-	public void delete(ID id) {
-
-	}
-
 	private Class<ENTITY> extractGenericType() {
 		ParameterizedType genericSuperclass = (ParameterizedType) getClass().getGenericSuperclass();
 		return (Class<ENTITY>) genericSuperclass.getActualTypeArguments()[3];
@@ -80,6 +73,4 @@ public   class BaseServiceImpl<RESPONSE,REQUEST,ID,ENTITY extends  Base> impleme
 		RESPONSE   response = modelMapper.map(entity,responseClass);
 		return  response ;
 	}
-
-
 }
