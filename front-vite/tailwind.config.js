@@ -31,6 +31,6 @@ export default {
       'table-comp-res': '#0A47817A',
     }
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 
