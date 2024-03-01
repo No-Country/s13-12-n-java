@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       {/* <div className="bg-dark-blue lg:hidden h-80 w-screen fixed top-0 z-30 rounded-b-full"></div> */}
-      <div className="grid lg:grid-cols-3 xl:grid-cols-4 min-w-screen h-screen xl:max-w-screen bg-gradient-to-tl from-light-blue to-semi-white">
+      <div className="grid lg:grid-cols-3 xl:grid-cols-4 min-w-screen h-screen xl:max-w-screen font-text bg-gradient-to-tl from-light-blue to-semi-white">
         {!isMobile && <Navbar Class='lg:col-span-1'></Navbar>}
         <div className="lg:col-span-2 xl:col-span-3">
           {isMobile ? <Header></Header> : <Topbar />}
