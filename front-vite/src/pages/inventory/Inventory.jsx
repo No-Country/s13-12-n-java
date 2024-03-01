@@ -1,7 +1,10 @@
 import ProductTable from "../../components/ProductTable";
 import ProductTableRes from "../../components/ProductTableRes";
-import ProductosLast from "../../components/ProductosLast";
 import MediaQuery from "react-responsive";
+import AcessFast from "../../components/AcessFast";
+import OnlyStock from "../../components/OnlyStock";
+import InventSearch from "../../components/InventSearch";
+import "./inventory.css"
 
 const App = () => {
   const productos = [
@@ -78,32 +81,37 @@ const App = () => {
       imagen: "/images/isotipo.svg",
       isChecked: false,
     },
-    {
-      nombre: "Producto 9",
-      codigo: "#009",
-      tipo: "Ropa",
-      precio: 15,
-      cantidad: 30,
-      imagen: "/images/isotipo.svg",
-      isChecked: false,
-    },
+    // {
+    //   nombre: "Producto 9",
+    //   codigo: "#009",
+    //   tipo: "Ropa",
+    //   precio: 15,
+    //   cantidad: 30,
+    //   imagen: "/images/isotipo.svg",
+    //   isChecked: false,
+    // },
   ];
 
   return (
-    <div className="flex items-center justify-center flex-wrap">
+    <div className="flex flex-wrap sm:flex sm:items-center sm:justify-center invent-media">
+      
       <MediaQuery minWidth={768}>
-        <section className="m-4">
-        <h1 className="text-3xl">Inventario</h1>
-        <ProductTable productos={productos} />
+        <section className="flex justify-center items-center flex-col px-4">
+          <h1 className="text-3xl">Inventario</h1>
+          <OnlyStock/>
+          <ProductTable productos={productos} />
         </section>
       </MediaQuery>
 
       <MediaQuery maxWidth={767}>
-        <h1 className="text-3xl">Lista de Productos</h1>
+        <h1 className="text-3xl z-20">Inventario</h1>
+        <InventSearch/>
+        <h1 className="text-3xl w-full px-2 z-20">Lista de Productos</h1>
         <ProductTableRes productos={productos} />
       </MediaQuery>
 
-      <ProductosLast />
+      <AcessFast />
+
     </div>
   );
 };

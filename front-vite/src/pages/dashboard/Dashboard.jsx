@@ -4,6 +4,7 @@ import { useMediaQuery } from "react-responsive";
 import Shortcuts from "../../components/Shortcuts";
 import CardsInfo from "../../components/CardsInfo";
 import InfoCard from "../../components/InfoCard";
+import Searchbar from "../../components/Searchbar";
 
 export default function Dashboard() {
   const isMobile = useMediaQuery({ maxWidth: 1023 });
@@ -33,6 +34,9 @@ export default function Dashboard() {
             ))}
           </div>
           {!isMobile && <CardsInfo/>}
+          <div className="flex justify-center mb-4">
+            {isMobile && <Searchbar />}    
+          </div>
           <div className="flex justify-center gap-4 mt-2 lg:hidden">
             {/* {shortcutsIcons.map((icon) => {
               <button className="bg-light-blue rounded-xl w-14 h-14">

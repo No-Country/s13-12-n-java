@@ -18,7 +18,7 @@ const ProductTable = ({ productos }) => {
   };
   
   return (
-    <table className='my-4 bg-light-cyan'>
+    <table className='w-full my-4 bg-light-cyan'>
       <thead>
         <tr>
           <th className='px-5 py-3'><input type="checkbox" checked={isCheckedAll} onChange={handleCheckboxChangeAll} /></th>
