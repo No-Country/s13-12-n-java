@@ -1,0 +1,22 @@
+/* .probando{
+    position: absolute;
+}
+.probando-dentro{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: #04476D;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    transform: translate(-50%, -80%)
+} */
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .invent-media{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
