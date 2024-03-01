@@ -14,8 +14,7 @@ const App = () => {
       tipo: "Ropa",
       precio: 10,
       cantidad: 5,
-      imagen:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Warnweste_gelb.jpg/260px-Warnweste_gelb.jpg",
+      imagen: "/images/ropa/image1.svg",
       isChecked: false,
     },
     {
@@ -24,7 +23,7 @@ const App = () => {
       tipo: "Ropa",
       precio: 15,
       cantidad: 3,
-      imagen: "/images/isotipo.svg",
+      imagen: "/images/ropa/image2.svg",
       isChecked: false,
     },
     {
@@ -33,7 +32,7 @@ const App = () => {
       tipo: "Ropa",
       precio: 15,
       cantidad: 4,
-      imagen: "/images/isotipo.svg",
+      imagen: "/images/ropa/image3.svg",
       isChecked: false,
     },
     {
@@ -42,7 +41,7 @@ const App = () => {
       tipo: "Ropa",
       precio: 15,
       cantidad: 7,
-      imagen: "/images/isotipo.svg",
+      imagen: "/images/ropa/image4.svg",
       isChecked: false,
     },
     {
@@ -51,7 +50,7 @@ const App = () => {
       tipo: "Ropa",
       precio: 15,
       cantidad: 13,
-      imagen: "/images/isotipo.svg",
+      imagen: "/images/ropa/image5.svg",
       isChecked: false,
     },
     {
@@ -60,7 +59,7 @@ const App = () => {
       tipo: "Ropa",
       precio: 15,
       cantidad: 10,
-      imagen: "/images/isotipo.svg",
+      imagen: "/images/ropa/image6.svg",
       isChecked: false,
     },
     {
@@ -69,7 +68,7 @@ const App = () => {
       tipo: "Ropa",
       precio: 15,
       cantidad: 0,
-      imagen: "/images/isotipo.svg",
+      imagen: "/images/ropa/image7.svg",
       isChecked: false,
     },
     {
@@ -93,7 +92,7 @@ const App = () => {
   ];
 
   return (
-    <div className="flex flex-wrap sm:flex sm:items-center sm:justify-center invent-media">
+    <div className="flex flex-wrap sm:flex sm:items-center sm:justify-around invent-media">
       
       <MediaQuery minWidth={768}>
         <section className="flex justify-center items-center flex-col px-4">
