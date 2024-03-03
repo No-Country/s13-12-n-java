@@ -10,7 +10,7 @@ export default function Orders() {
   const isMobile = useMediaQuery({ maxWidth: 1023 });
 
   return (
-    <div className='grid grid-cols-3 xl:mt-5 overflow-y-auto'>
+    <div className='grid grid-cols-3 xl:mt-5 '>
       <div className='xl:col-span-2'>
         <h1 className="text-center lg:text-left text-2xl mb-2.5">Pedidos</h1>
         <CardsInfo showSales={false} showStock={false} showShoppings={true}/>

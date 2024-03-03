@@ -24,7 +24,7 @@ export default function Dashboard() {
   const shortcutsIcons = ['add_business', 'note_add', 'person_add', 'category']
 
   return (
-      <div className="xl:grid xl:grid-cols-3 max-h-screen flex flex-col items-center">
+      <div className="xl:grid xl:grid-cols-3  flex flex-col items-center">
         <div className="xl:col-span-2 xl:mt-5">
           <h1 className="text-center lg:text-left text-2xl mb-2.5">Hoy</h1>
           <div className="carousel max-w-sm p-4 space-x-4 lg:hidden">
