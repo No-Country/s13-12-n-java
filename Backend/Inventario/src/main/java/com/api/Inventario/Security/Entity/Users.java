@@ -1,5 +1,4 @@
 package com.api.Inventario.Security.Entity;
-
 import com.api.Inventario.Security.Enum.Role;
 import com.api.Inventario.model.entity.Ticket;
 import jakarta.persistence.*;
@@ -37,7 +36,7 @@ public class Users implements UserDetails {
     @Override
     public String getUsername() {
         return email;
-    }
+    } 
     @Override
     public boolean isAccountNonExpired() {
        return true;
@@ -54,5 +53,4 @@ public class Users implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
-
 }
