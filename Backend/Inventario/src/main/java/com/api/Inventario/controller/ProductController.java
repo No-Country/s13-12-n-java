@@ -21,4 +21,9 @@ public class ProductController extends BaseControllerImpl<ProductResponse, Produ
         this.productServiceImpl.deleteById(id);
         return ResponseEntity.noContent().build();
     }
+
+    @PostMapping("calcl-iva/{price}")
+    public Double calclIVA(@PathVariable("price") Double price){
+        return this.productServiceImpl.calclIVA(price);
+    }
 }
