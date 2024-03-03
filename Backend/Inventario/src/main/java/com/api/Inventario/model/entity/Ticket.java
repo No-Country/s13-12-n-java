@@ -5,7 +5,6 @@ import com.api.Inventario.model.entity.base.Base;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.security.core.userdetails.User;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
