@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("companys")
+@RequestMapping("api/v1/company")
 public class CompanyController extends BaseControllerImpl<CompanyResponse, CompanyRequest, Long, Company, CompanyServiceImpl> {
 
     @Autowired
