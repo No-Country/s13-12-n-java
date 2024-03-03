@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, } from "react-router-dom";
 import NavElem from "./NavElem";
 
 export default function Navbar( {Class} ) {
@@ -35,4 +36,4 @@ export default function Navbar( {Class} ) {
       <button className="mb-8 text-xs">Cerrar sesión</button>
     </div>
   );
-};
+}

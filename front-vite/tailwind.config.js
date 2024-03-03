@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'found-list-res': 'linear-gradient(to bottom right, #CED4DAA1, #64ADDEA1)',
+      })
+    },
     fontFamily: {
       'logo': ['Yanone Kaffeesatz', 'sans-serif'],
       'text': ['Roboto', 'sans-serif']
@@ -21,8 +25,12 @@ export default {
       'white': '#FFFFFF',
       'light-gray': '#D0D0D0',
       'dark-gray': '#444444',
-      'black': '#000000'
-    },
+      'black': '#000000',
+      'light-cyan': '#F4F5FC',
+      'font-table': '#5C6F88',
+      'theme-dark': '#212529',
+      'table-comp-res': '#0A47817A',
+    }
   },
   plugins: [require("daisyui")],
 }
