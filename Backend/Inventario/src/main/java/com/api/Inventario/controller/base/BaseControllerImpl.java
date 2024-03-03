@@ -44,7 +44,6 @@ public abstract class BaseControllerImpl<RESPONSE,REQUEST,ID,ENTITY extends Base
 		if (updateEntity != null) {
 			logger.info("se modifico enntidad",request);
 			return ( new ResponseEntity(new MessageResponse("update"), HttpStatus.OK));
-
 		} else {
 			return new ResponseEntity(new MessageResponse("you  haven't update your info"),HttpStatus.NOT_FOUND);
 		}

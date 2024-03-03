@@ -15,12 +15,12 @@ import java.util.List;
 @Entity
 @ToString
 public class Ticket extends Base {
+
 	private String tipo; // Ejemplo: Factura, Nota de crédito, etc.
 	private String numero;
 	private LocalDate fechaEmision;
 	@OneToMany(mappedBy = "ticket", cascade = CascadeType.ALL)
 	private List<TicketDetails> ticketDetails = new ArrayList<>();
-
 	@JsonIgnore
 	@JoinColumn(name = "user_id", nullable = false)
 	private Users users;
