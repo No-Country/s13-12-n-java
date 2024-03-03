@@ -10,7 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("api/v1/products")
+@RequestMapping("api/v1/product")
 public class ProductController extends BaseControllerImpl<ProductResponse, ProductRequest, Long, Product, ProductServiceImpl> { //esta capa solo se comunica con la capa de servicio
 
     @Autowired
