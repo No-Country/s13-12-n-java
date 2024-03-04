@@ -2,46 +2,51 @@ import Shortcuts from "../../components/Shortcuts";
 import IndexPage from "../../components/ProductosLast";
 import { useMediaQuery } from "react-responsive";
 import CardEmpleyments from "../../components/CardEmpleyments";
+import InventSearch from "../../components/InventSearch";
 
 export default function HumanResources() {
   const isMobile = useMediaQuery({ maxWidth: 1023 });
 
   const employees = [
     {
-        image: "/images/ropa/image1.svg",
-        name: "Lucas Santos",
-        cargo: "Empleado de hace mas de 2 años con ganas de seguir aprendiendo."
+      image: "/images/image-ej.jpg",
+      name: "Lucas Santos",
+      cargo: "Administrador",
     },
     {
-        image: "/images/ropa/image1.svg",
-        name: "Lucas Santos",
-        cargo: "Empleado de hace mas de 2 años con ganas de seguir aprendiendo."
+      image: "/images/image-ej.jpg",
+      name: "Micaela Acosta",
+      cargo: "Tecnica en Administracion",
     },
     {
-        image: "/images/ropa/image1.svg",
-        name: "Lucas Santos",
-        cargo: "Empleado de hace mas de 2 años con ganas de seguir aprendiendo."
+      image: "/images/image-ej.jpg",
+      name: "Lucas Santos de Algomas",
+      cargo: "Limpieza",
+    },
+    {
+      image: "/images/image-ej.jpg",
+      name: "Micaela Acosta de Algomas",
+      cargo: "Tecnica en Administracion",
     },
   ];
 
-
   return (
-    <div className="xl:grid xl:grid-cols-3 max-h-screen flex flex-col items-center gap-10">
-      <div className="xl:col-span-2 xl:mt-5">
+    <div className="xl:grid xl:grid-cols-3 flex flex-col items-center gap-10">
+      <div className="xl:col-span-2 xl:mt-5 w-full">
         <div className="xl:col-span-2 xl:mt-5 flex items-center justify-center flex-col gap-3">
-            <h1 className="text-center lg:text-left text-2xl mb-2.5">Recursos Humanos</h1>
-            {employees.map((employees, index) => (
-                <CardEmpleyments 
-                key={index}
-                image={employees.image}
-                name={employees.name}
-                cargo={employees.cargo}
-                />
-            ) )}
-            
-
+          <h1 className="text-center lg:text-left text-2xl mb-2.5">
+            Recursos Humanos
+          </h1>
+          <InventSearch/>
+          {employees.map((employees, index) => (
+            <CardEmpleyments
+              key={index}
+              image={employees.image}
+              name={employees.name}
+              cargo={employees.cargo}
+            />
+          ))}
         </div>
-
       </div>
 
       <div className="xl:col-span-1 flex flex-col items-center xl:mt-8">
