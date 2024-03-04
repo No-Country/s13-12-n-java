@@ -1,5 +1,4 @@
 package com.api.Inventario.model.entity;
-
 import com.api.Inventario.model.entity.base.Base;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

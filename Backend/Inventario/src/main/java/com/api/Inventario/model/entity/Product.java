@@ -1,6 +1,7 @@
 package com.api.Inventario.model.entity;
 
 import com.api.Inventario.model.entity.base.Base;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -27,6 +28,7 @@ public  class Product extends Base {
     private boolean status = true;
     @ManyToOne
     @JoinColumn(name= "category_id")
+    @JsonBackReference
     private Category category;
 
 

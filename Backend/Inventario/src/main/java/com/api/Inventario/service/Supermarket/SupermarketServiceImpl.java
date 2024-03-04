@@ -36,6 +36,8 @@ public class SupermarketServiceImpl extends BaseServiceImpl<SupermarketResponse,
         Optional<Category> categories = categoryRepository.findById(request.getCategory());
         supermarket.setCategory(categories.get());
         supermarketRepository.save(supermarket);
+        categories.get().getSupermarketList().add(supermarket);
+        categoryRepository.save(categories.get());
     }
 }
 
