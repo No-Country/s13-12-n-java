@@ -17,4 +17,5 @@ public class ProductResponse {
     int stockMin;
     String image;
     boolean status;
+
 }

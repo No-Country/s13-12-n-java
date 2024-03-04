@@ -1,9 +1,8 @@
 package com.api.Inventario.model.dto.response;
-
+import com.api.Inventario.model.entity.Category;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 import java.util.Date;
 
 @Data
@@ -21,4 +20,6 @@ public class SupermarketResponse {
         Date expiration;
         String unitOfMeasure;
         boolean status;
+        Category category;
+
 }
