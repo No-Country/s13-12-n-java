@@ -2,6 +2,7 @@ package com.api.Inventario.model.entity;
 
 import com.api.Inventario.model.entity.base.Base;
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -30,6 +31,10 @@ public  class Product extends Base {
     @JoinColumn(name= "category_id")
     @JsonBackReference
     private Category category;
+    @ManyToOne
+    @JoinColumn(name="detalle_id")
+    private TicketDetails ticketDetails;
+
 
 
 }
