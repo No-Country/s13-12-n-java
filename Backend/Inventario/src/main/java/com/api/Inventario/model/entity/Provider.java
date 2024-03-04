@@ -19,7 +19,7 @@ public class Provider extends Base {
     private String name;
 
     @Column(nullable = false,unique = true)
-    private int cuit;
+    private String cuit;
 
     @Column(nullable = false,unique = true)
     private String contact;

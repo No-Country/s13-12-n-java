@@ -14,7 +14,7 @@ public class ProviderRequest {
     private String name;
 
     @NotBlank
-    private int cuit;
+    private String cuit;
 
     @NotBlank
     private String contact;
