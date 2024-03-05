@@ -29,6 +29,7 @@ export default {
       'font-table': '#5C6F88',
       'theme-dark': '#212529',
       'table-comp-res': '#0A47817A',
+      'white-transparent' : '#EEEEEE'
     }
   },
   plugins: [require("daisyui")],
