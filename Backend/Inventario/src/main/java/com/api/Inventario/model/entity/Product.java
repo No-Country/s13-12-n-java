@@ -32,8 +32,8 @@ public  class Product extends Base {
     @JsonBackReference
     private Category category;
     @ManyToOne
-    @JoinColumn(name="detalle_id")
-    private TicketDetails ticketDetails;
+    @JoinColumn(name="ticket_id")
+    private Ticket ticket;
 
 
 

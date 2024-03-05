@@ -21,7 +21,7 @@ public class SupermarketController extends BaseControllerImpl<SupermarketRespons
 	public ResponseEntity<SupermarketResponse> create(@Valid @RequestBody SupermarketRequest request) {
 		service.createSupermarket(request);
 
-		return new ResponseEntity(new MessageResponse("Created Tcket"), HttpStatus.CREATED);
+		return new ResponseEntity(new MessageResponse("Created Product"), HttpStatus.CREATED);
 
 
 

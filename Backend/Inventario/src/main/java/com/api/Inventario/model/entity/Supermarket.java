@@ -10,7 +10,4 @@ public class Supermarket extends Product {
     private Date expiration;
     @Enumerated(EnumType.STRING)
     private UnitOfMeasure unitOfMeasure;
-
-
-
 }

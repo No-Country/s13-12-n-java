@@ -21,6 +21,4 @@ public class TicketDetails extends Base {
 	@JoinColumn(name = "ticket_id", nullable = false)
 	private Ticket ticket;
 	private Integer amount;
-	@OneToMany(mappedBy = "ticketDetails",cascade = CascadeType.ALL)
-	private List<Product> productList= new ArrayList<>();
 }

@@ -1,6 +1,7 @@
 package com.api.Inventario.model.dto.request;
 
 import com.api.Inventario.Security.Entity.Users;
+import com.api.Inventario.model.entity.Product;
 import com.api.Inventario.model.entity.TicketDetails;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.CascadeType;
@@ -22,6 +23,7 @@ public class TicketRequest {
 	private String numero;
 	private LocalDate fechaEmision;
 	private List<TicketDetails> ticketDetails;
+	private List<Product> productList;
 	private Long user;
 
 }
