@@ -1,6 +1,6 @@
 import InfoCard from "./InfoCard";
 
-export default function CardsInfo() {
+export default function CardsInfo( {showSales, showStock, showShoppings}) {
 
   const cardsVentas = [
     { icon: "paid", title: "Ventas", amount: "$100000" },
@@ -24,27 +24,27 @@ export default function CardsInfo() {
     <div className="flex flex-col">
       {/*Desktop version*/}
       <div className="hidden md:flex md:flex-col gap-4">
-        <div className="bg-dark-blue pt-2 pb-3 px-10 rounded-lg bg-opacity-75">
+        <div className={`bg-dark-blue pt-2 pb-3 px-10 rounded-lg bg-opacity-75 ${showSales ? "block" : "hidden"}`}>
           <p className="text-xl text-left text-white">Ventas</p>
           <div className="flex justify-between text-sm">
-            {cardsVentas.map((card) => (
-              <InfoCard {...card} />
+            {cardsVentas.map((card, i) => (
+              <InfoCard {...card} key={i}/>
             ))}
           </div>
         </div>
-        <div className=" bg-dark-blue pt-2 pb-3 px-10 rounded-lg bg-opacity-75">
+        <div className={`bg-dark-blue pt-2 pb-3 px-10 rounded-lg bg-opacity-75 ${showStock ? "block" : "hidden"}`}>
           <p className="text-xl text-left text-white">Stock</p>
           <div className="flex justify-between text-sm">
-            {cardsStock.map((card) => (
-              <InfoCard {...card} />
+            {cardsStock.map((card, i) => (
+              <InfoCard {...card} key={i} />
             ))}
           </div>
         </div>
-        <div className="bg-dark-blue pt-2 pb-3 px-10 rounded-lg bg-opacity-75">
+        <div className={`bg-dark-blue pt-2 pb-3 px-10 rounded-lg bg-opacity-75 ${showShoppings ? "block" : "hidden"}`}>
           <p className="text-xl text-left text-white">Compras</p>
           <div className="flex justify-between text-sm">
-            {cardsCompras.map((card) => (
-              <InfoCard {...card} />
+            {cardsCompras.map((card, i) => (
+              <InfoCard {...card} key={i}/>
             ))}
           </div>
         </div>

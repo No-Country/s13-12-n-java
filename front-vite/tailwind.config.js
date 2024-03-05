@@ -12,6 +12,7 @@ export default {
     },
     fontFamily: {
       'logo': ['Yanone Kaffeesatz', 'sans-serif'],
+      'text': ['Roboto', 'sans-serif']
 
     },
     colors: {
