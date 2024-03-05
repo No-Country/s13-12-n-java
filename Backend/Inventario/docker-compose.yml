@@ -1,9 +1,18 @@
 version: "3.8"
 services:
-  app:
+  app-angular:
     container_name: "sbcontainer"
     build: .
-    image: marcosep192000/test:latest
+    image: marcosep192000/front:ver1.0.0
+    depends_on:
+      - app
+    ports:
+      - "3000:3000"
+    networks:
+      - mired
+  app:
+    build: .
+    image: marcosep192000/test:ver.1.1.2
     depends_on:
       - postgres_db
     ports:
