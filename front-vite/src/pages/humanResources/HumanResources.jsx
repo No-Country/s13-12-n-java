@@ -41,9 +41,9 @@ export default function HumanResources() {
   ];
 
   return (
-    <div className="xl:grid xl:grid-cols-3 flex flex-col items-center gap-10">
+    <div className="xl:grid xl:grid-cols-3 flex flex-col items-center gap-10 ">
       <div className="xl:col-span-2 xl:mt-5 w-full">
-        <div className="xl:col-span-2 xl:mt-5 flex items-center justify-center flex-col gap-3">
+        <div className="xl:col-span-2 xl:mt-5 flex items-center justify-center flex-col gap-3 lg:mr-10 xl:mb-6">
           <h1 className="text-center text-2xl mb-2.5">
             Recursos Humanos
           </h1>
@@ -59,9 +59,9 @@ export default function HumanResources() {
         </div>
       </div>
 
-      <div className="xl:col-span-1 flex flex-col items-center xl:mt-8">
-        {/* {!isMobile && (
-          <div className="bg-semi-white flex flex-col w-80 items-center justify-center p-7 rounded-3xl">
+      <div className="xl:flex-wrap flex flex-col items-center xl:mt-8 m-5">
+        {!isMobile && (
+          <div className="bg-semi-white flex flex-col items-center justify-center rounded-3xl p-6">
             <h2 className="mb-6 text-2xl">Accesos Rápidos</h2>
             <div className="grid grid-cols-2 gap-6 gap-y-6">
               <Shortcuts
@@ -73,7 +73,7 @@ export default function HumanResources() {
               <Shortcuts label={"Nueva Categoría"} icon="category"></Shortcuts>
             </div>
           </div>
-        )} */}
+        )}
         <div className="mx-4">
           <IndexPage></IndexPage>
         </div>
