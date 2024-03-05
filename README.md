@@ -68,14 +68,14 @@ VITE_APP_API_ROUTE = Localhost of you api ( ex. http://localhost:3000).
 
 ### 👉🏻 Task List ✅
 
-- Development of Rest Api for Lost and Found pets with Java 17, Spring Boot 2.7.
+- Development of Rest Api for Lost and Found pets with Java 17, Spring Boot 3.1.8.
 - Validations with SpringBoot Validation.
-- MySQL Database.
+- PostgreSQL Database.
 - Creating filters with Spring JPA Specification.
 - Users validation with JWT and Spring Security.
 - Data Persistence with Hibernate/JPA.
-- Documentation with Swagger 2.9.
-- Deployed on Railway.-
+- Documentation with Swagger 2.0.2.
+
 
 ### 👉🏻 Built with 🛠️
 ![Java](https://img.shields.io/badge/Java-orange?style=for-the-badge&logo=Java&logoColor=white)
@@ -92,9 +92,9 @@ VITE_APP_API_ROUTE = Localhost of you api ( ex. http://localhost:3000).
 
 ### 👉🏻 Developers
 
-|                                                                                                                                           <img src="https://i.postimg.cc/MTWdWGDg/Jeyson.jpg" alt="Photo Jeyson Velazquez" height=90>                                                                                                                                           | <img src="https://i.postimg.cc/d1RFs9xC/Marcos.png" alt="Photo Marcos Paz Goncheff" height=90>| <img src="https://i.postimg.cc/90cMMwqD/Yo-panal.jpg" alt="Photo Matías Carballo" height=90>|
-|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-:|:-:|
-|                                                                                                                                                                              **Jeyson Velazquez**                                                                                                                                                                               | **Marcos Paz Goncheff**  | **Matías Carballo** |
+|<img src="https://i.postimg.cc/MTWdWGDg/Jeyson.jpg" alt="Photo Jeyson Velazquez" height=90>| <img src="https://i.postimg.cc/d1RFs9xC/Marcos.png" alt="Photo Marcos Paz Goncheff" height=90>| <img src="https://i.postimg.cc/90cMMwqD/Yo-panal.jpg" alt="Photo Matías Carballo" height=90>|
+|:-:|:-:|:-:|
+|**Jeyson Velazquez**| **Marcos Paz Goncheff**  | **Matías Carballo** |
 | <a href="https://github.com/jeysonvelas" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>  <a href="https://www.linkedin.com/in/jeysonvelasquez/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/marcosep192000" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/marcos-paz-goncheff/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/lokywolf2295" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>  <a href="https://www.linkedin.com/in/matias-es-carballo/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> ||
 
 <hr/>
@@ -103,35 +103,33 @@ VITE_APP_API_ROUTE = Localhost of you api ( ex. http://localhost:3000).
 
 ### 👉🏻 Task List ✅
 
-- Libraries: Our app is built using React for UI components, Tailwind CSS for styling, and React-hook-form for form handling.
+- Libraries: Our app is built using React for UI components and Tailwind CSS for styling.
 - CLI: We're using Vite as our build tool to speed up development time.
 - Language: Our entire stack is built on JavaScript, which is a popular and versatile language.
 - Router: React Router Dom is used for client-side routing.
 - API Calls: Axios is our HTTP client for making API requests.
 - Code Formatting: We use Prettier to ensure consistent code style.
 - Animations: We're using CSS to create engaging animations throughout the app.
-- Deployment: We're deploying our app on Vercel, which makes it easy to deploy and scale our app with just a few clicks. 
 
 
 ### 👉🏻 Built with 🛠️
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=for-the-badge&logo=Javascript&logoColor=%23F7DF1E)
 ![React](https://img.shields.io/badge/React-149eca?style=for-the-badge&logo=react&logoColor=fff)
-![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?style=for-the-badge&logo=Node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Tailwind-%23404d59.svg?style=for-the-badge)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-d2c?style=for-the-badge&logo=Framer_Motion&logoColor=fff)
-![React Query](https://img.shields.io/badge/React_Query-149eca?style=for-the-badge&logo=react-query&logoColor=fff)
 ![Axios](https://img.shields.io/badge/Axios-172B4D?style=for-the-badge&logo=Axios&logoColor=fff)
 ![Prettier](https://img.shields.io/badge/Prettier-crimson?style=for-the-badge&logo=Prettier&logoColor=fff)
 ![ESLint](https://img.shields.io/badge/ESLint-000?style=for-the-badge&logo=ESLint&logoColor=fff)
-![Vercel](https://img.shields.io/badge/vercel%20-%23000000.svg?&style=for-the-badge&logo=vercel&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=TailwindCSS&logoColor=fff)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=fff)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=ReactRouter&logoColor=fff)
+
 
 ### 👉🏻 Developers
 
-|                                                                                                                                                     <img src="https://i.postimg.cc/5yBc7H6k/Abril.jpg" alt="Abril Rodríguez" width=80>                                                                                                                                                     | <img src="https://i.postimg.cc/fR5rDXrg/Ana.png" alt="Photo Ana Juárez" height=90>| <img src="https://i.postimg.cc/bY1fSqN0/Antonio.jpg" alt="Photo Antonio Ayola" height=90>| <img src="https://i.postimg.cc/dV5tgCH6/Carlos.jpg" alt="Photo Carlos Bohorquez Parra" height=90>|
-|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-:|:-:|:-:|
-|                                                                                                                                                                                    **Abril Rodríguez**                                                                                                                                                                                     | **Ana Juárez**  | **Antonio Ayola**  | **Carlos Bohorquez Parra**  |
-| <a href="https://github.com/abrilrod" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/abril-rodr%C3%ADguez-907b95278/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/Layeska" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/ana-juarez01/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/Tono2007" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/antonio-ayola/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/carlosBohorquuez20" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/carlos-bohorquez-parra-711b5224b/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> ||
+|<img src="https://i.postimg.cc/5yBc7H6k/Abril.jpg" alt="Abril Rodríguez" width=80>|<img src="https://i.postimg.cc/2Sr3SYV9/Salomon.jpg" alt="Photo Salomón Contreras" height=90>|<img src="https://i.postimg.cc/QxB33y89/Daniel.jpg" alt="Photo Abdi Daniel" height=90>| 
+|:-:|:-:|:-:|
+|**Abril Rodríguez**|**Salomón Contreras**|                                                                                                                                                                              **Abdi Daniel**| 
+| <a href="https://github.com/abrilrod" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/abril-rodr%C3%ADguez-907b95278/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/salomoncjl" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/salomoncjl/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/abdidaniel" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href=" https://www.linkedin.com/in/abdidanielescobarm" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> ||
 
 ## ✔ Product Manager
 
