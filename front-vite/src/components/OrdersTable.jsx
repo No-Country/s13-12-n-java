@@ -14,7 +14,7 @@ export default function OrdersTable() {
     ];
 
   return (
-    <div>
+    <div className="">
       <div className="grid grid-cols-6 grid-rows-1 justify-items-center gap-2 w-full mt-6 font-semibold bg-dark-blue h-10 text-semi-white items-center">
         <input type="checkbox" disabled className="justify-self-start ml-6"/>
         <div>Proveedor</div>
