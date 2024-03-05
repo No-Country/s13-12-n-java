@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Searchbar( {hidden, Class} ) {
   return (
-    <div className={`flex justify-center ${Class}  items-center bg-white rounded-full border-blue border-2`}>
+    <div className={`flex justify-center ${Class}  items-center bg-white rounded-full shadow-md border-blue border-2`}>
       <input
         type="search"
         placeholder="Busque su producto aquí"
