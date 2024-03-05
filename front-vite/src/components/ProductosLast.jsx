@@ -30,7 +30,7 @@ const IndexPage = () => {
   ];
 
   return (
-    <div className='cont-last-movements flex flex-col gap-5 p-2 w-96'>
+    <div className='cont-last-movements flex flex-col gap-5 m-4 w-5/6'>
       <h1 className='h1-title-last-movements text-center'>Últimos Movimientos</h1>
       {productos.map((producto, index) => (
         <Productos

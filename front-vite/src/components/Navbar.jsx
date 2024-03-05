@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, } from "react-router-dom";
 import NavElem from "./NavElem";
 
 export default function Navbar( {Class} ) {
@@ -13,7 +14,7 @@ export default function Navbar( {Class} ) {
   ];
 
   return (
-    <div className={`fixed top-0 left-0 z-40 w-64 bg-blue text-white flex flex-col text-center justify-between min-h-screen lg:max-h-screen lg:static ${Class}`}>
+    <div className={`fixed top-0 left-0 z-40 w-64 bg-blue text-white flex flex-col text-center justify-between min-h-screen lg:max-h-screen lg:sticky ${Class}`}>
       <div className="flex flex-col mt-16 items-center">
         <img
           src="/images/img-prueba.jpg"
@@ -35,4 +36,4 @@ export default function Navbar( {Class} ) {
       <button className="mb-8 text-xs">Cerrar sesión</button>
     </div>
   );
-};
+}

@@ -1,0 +1,31 @@
+.custom-checkbox {
+    appearance: none; /* Oculta los estilos nativos del checkbox */
+    width: 20px; /* Ancho personalizado */
+    height: 20px; /* Alto personalizado */
+    border: 2px solid #6750A4; /* Borde del checkbox */
+    border-radius: 4px; /* Borde redondeado */
+    outline: none; /* Quita el contorno predeterminado */
+  }
+  
+  .custom-checkbox:checked {
+    background-color: #6750A4; /* Color de fondo cuando está marcado */
+  }
+  
+  /* Pseudo-elemento para el indicador del checkbox */
+  .custom-checkbox::after {
+    content: "";
+    display: inline-block;
+    width: 10px; /* Ancho del indicador */
+    height: 10px; /* Alto del indicador */
+    background-color: white; /* Color del indicador */
+    border-radius: 50%; /* Forma redonda */
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden; /* Ocultar el indicador por defecto */
+  }
+  
+  .custom-checkbox:checked::after {
+    visibility: visible; /* Mostrar el indicador cuando está marcado */
+  }
