@@ -4,7 +4,7 @@ import BoxInvent from "./BoxInvent";
 
 export default function InventSearch() {
   return (
-    <div className="w-80">
+    <div className="w-80 lg:hidden">
         <BoxInvent />
         <Searchbar />
     </div>

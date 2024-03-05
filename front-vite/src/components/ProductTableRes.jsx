@@ -30,7 +30,7 @@ const ProductTableRes = ({ productos }) => {
                   alt={producto.nombre}
                 />
                 </div>
-                <img src="/images/vector.svg" alt="" />
+                <img src="/images/delete.svg" alt="delete" />
               </td>
             </tr>
             {expandedRow === index && (

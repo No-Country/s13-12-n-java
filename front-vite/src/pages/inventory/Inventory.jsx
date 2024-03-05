@@ -92,7 +92,7 @@ const App = () => {
   ];
 
   return (
-    <div className="flex flex-wrap sm:flex sm:items-center sm:justify-around invent-media">
+    <div className="flex flex-wrap sm:flex sm:items-center sm:justify-around invent-media ">
       
       <MediaQuery minWidth={768}>
         <section className="flex justify-center items-center flex-col px-4">

@@ -1,6 +1,7 @@
 ::-webkit-scrollbar {
     -webkit-appearance: none;
-
+}
 body{
     background : linear-gradient(to bottom right,#CED4DAA1,#64ADDEA1);
-  }
+}
+
