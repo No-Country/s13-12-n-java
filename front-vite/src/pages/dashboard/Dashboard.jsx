@@ -5,6 +5,7 @@ import Shortcuts from "../../components/Shortcuts";
 import CardsInfo from "../../components/CardsInfo";
 import InfoCard from "../../components/InfoCard";
 import Searchbar from "../../components/Searchbar";
+import "../../App.css"
 
 export default function Dashboard() {
   const isMobile = useMediaQuery({ maxWidth: 1023 });
@@ -23,7 +24,7 @@ export default function Dashboard() {
   const shortcutsIcons = ['add_business', 'note_add', 'person_add', 'category']
 
   return (
-      <div className="xl:grid xl:grid-cols-3 max-h-screen flex flex-col items-center">
+      <div className="xl:grid xl:grid-cols-3  flex flex-col items-center">
         <div className="xl:col-span-2 xl:mt-5">
           <h1 className="text-center lg:text-left text-2xl mb-2.5">Hoy</h1>
           <div className="carousel max-w-sm p-4 space-x-4 lg:hidden">
@@ -33,16 +34,16 @@ export default function Dashboard() {
               </div>
             ))}
           </div>
-          {!isMobile && <CardsInfo/>}
+          {!isMobile && <CardsInfo showSales={true} showStock={true} showShoppings={true}/>}
           <div className="flex justify-center mb-4">
             {isMobile && <Searchbar />}    
           </div>
           <div className="flex justify-center gap-4 mt-2 lg:hidden">
-            {/* {shortcutsIcons.map((icon) => {
+            {/* {shortcutsIcons.map((icon) => (
               <button className="bg-light-blue rounded-xl w-14 h-14">
                 <span className="text-white material-symbols-rounded">{icon}</span>
               </button>
-            })} */}
+            ))} */}
             <button className="bg-light-blue rounded-xl w-14 h-14 flex items-center justify-center">
               <span className="text-white material-symbols-rounded">add_business</span>
             </button>
