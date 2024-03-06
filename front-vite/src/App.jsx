@@ -9,6 +9,7 @@ import { useMediaQuery } from "react-responsive";
 import Reports from "./pages/reports/Reports";
 import Orders from "./pages/orders/Orders";
 import HumanResources from "./pages/humanResources/HumanResources";
+import Register from "./pages/register/Register";
 
 function App() {
   const isMobile = useMediaQuery({ maxWidth: 1023 });
@@ -29,6 +30,7 @@ function App() {
               <Route path="/orders" element={<Orders />} />
               <Route path="/human-resources" element={<HumanResources />} />
               <Route path="/reports" element={<Activity />} />
+              <Route path="/users" element={<Register/>}/>
               <Route path="*" element={<h1>Error 404. Page not found</h1>}/>
             </Routes>
           </div>

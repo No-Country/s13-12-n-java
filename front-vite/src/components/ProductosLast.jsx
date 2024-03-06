@@ -1,4 +1,3 @@
-
 import Productos from '../components/LastMovements';
 
 const IndexPage = () => {
@@ -30,16 +29,19 @@ const IndexPage = () => {
   ];
 
   return (
-    <div className='cont-last-movements flex flex-col gap-5 m-4 w-5/6'>
-      <h1 className='h1-title-last-movements text-center'>Últimos Movimientos</h1>
-      {productos.map((producto, index) => (
-        <Productos
-          key={index}
-          imagen={producto.imagen}
-          titulo={producto.titulo}
-          descripcion={producto.descripcion}
-        />
-      ))}
+    
+    <div className='cont-last-movements flex flex-col gap-5 my-4'>
+      <h1 className='text-xl text-center'>Últimos Movimientos</h1>
+      <div className='flex flex-col gap-4 max-h-64 overflow-y-auto'>
+        {productos.map((producto, index) => (
+          <Productos
+            key={index}
+            imagen={producto.imagen}
+            titulo={producto.titulo}
+            descripcion={producto.descripcion}
+          />
+        ))}
+      </div>
     </div>
   );
 };
