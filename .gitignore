@@ -4,6 +4,12 @@ database
 .env.prod
 .idea
 
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
 
 ### Linux ###
 *~
