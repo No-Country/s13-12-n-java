@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { Link, } from "react-router-dom";
+import { useLocation, useNavigate, } from "react-router-dom";
 import NavElem from "./NavElem";
 
 export default function Navbar( {Class} ) {
   const links = [
-    { name: "Dashboard", path: "/" },
+    { name: "Dashboard", path: "/dashboard" },
     { name: "Inventario", path: "/inventory" },
     { name: "Actividad", path: "/activity" },
     { name: "Ventas", path: "/sales" },
@@ -12,9 +12,17 @@ export default function Navbar( {Class} ) {
     { name: "Recursos Humanos", path: "/human-resources" },
     { name: "Reportes", path: "/reports" },
   ];
+  const { state } = useLocation();
+  const navigate = useNavigate();
+
+  const onLogout = () => {
+    navigate('/', {
+      replace: true,
+    });
+  };
 
   return (
-    <div className={`fixed top-0 left-0 z-40 w-64 bg-blue text-white flex flex-col text-center justify-between min-h-screen lg:max-h-screen lg:sticky ${Class}`}>
+    <div className={`${state?.loggedIn ? "flex" : "hidden" } fixed top-0 left-0 z-40 w-64 bg-blue text-white flex flex-col text-center justify-between min-h-screen lg:max-h-screen lg:sticky ${Class}`}>
       <div className="flex flex-col mt-16 items-center">
         <img
           src="/images/img-prueba.jpg"
@@ -33,7 +41,7 @@ export default function Navbar( {Class} ) {
           ))}
         </ul>
       </nav>
-      <button className="mb-8 text-xs">Cerrar sesión</button>
+      <button className="mb-8 text-xs" onClick={onLogout}>Cerrar sesión</button>
     </div>
   );
 }

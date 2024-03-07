@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function InputComp({ min, type, id, onChange, value, label, placeholder, required }) {
+export default function InputComp({ min, type, id, onChange, value, label, placeholder, required, name }) {
   return (
     <div className='flex flex-col mx-5'>
         <label className='' htmlFor={id}>{label}</label>
@@ -12,6 +12,7 @@ export default function InputComp({ min, type, id, onChange, value, label, place
             placeholder={placeholder}
             minLength={min}
             required={required}
+            name={name}
         ></input>
     </div>
   )
