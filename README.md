@@ -1,7 +1,7 @@
 # s13-12-n-java
 <div align="center">
 
-![Atlantis Inventtory Logo](https://i.postimg.cc/T3HrLKhm/Logo-Atlantis-Logo-horizonal.png)
+![Atlantis Inventtory Logo](https://i.postimg.cc/Pr1nSGf8/Atlantis-Inventtory.png)
 </div>
 
 <h3 align="justify">Discover Atlantis Inventory, the innovative application that will revolutionize your business management! 🌐✨ With Atlantis Inventory, managing your clothing store or supermarket has never been easier and more efficient. 🛒💼
@@ -10,7 +10,7 @@ You no longer have to worry about creating your shopping list month after month 
 
 <div align="center">
 
-<img src=https://i.postimg.cc/fTq356ZQ/Isotipo.png alt="Logo Atlantis Inventtory" width=100>
+<img src=https://i.postimg.cc/KzhHkjLq/Logo.png alt="Logo Atlantis Inventtory" width=100>
 </div>
 <hr/>
 
