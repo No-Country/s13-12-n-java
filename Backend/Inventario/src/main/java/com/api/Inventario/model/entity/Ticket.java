@@ -17,13 +17,13 @@ import java.util.List;
 @ToString
 public class Ticket extends Base {
 
-	private String tipo;
+	private String tipo; // Ejemplo: Factura, Nota de crédito, etc.
 	private String numero;
 	private LocalDate fechaEmision;
+	@OneToMany(mappedBy = "ticket", cascade = CascadeType.ALL)
+	private List<TicketDetails> ticketDetails = new ArrayList<>();
+
 	@JsonIgnore
 	@JoinColumn(name = "user_id", nullable = false)
 	private Users users;
-	@OneToOne(cascade = CascadeType.ALL)
-	@JoinColumn(name = "ticket_details_id", referencedColumnName = "id")
-	private TicketDetails ticketDetails;
 }

@@ -26,4 +26,5 @@ public class TicketRequest {
 	private List<Product> productList;
 	private Long user;
 
+
 }

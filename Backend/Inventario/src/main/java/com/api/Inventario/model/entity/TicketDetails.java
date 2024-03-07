@@ -21,4 +21,6 @@ public class TicketDetails extends Base {
 	@JoinColumn(name = "ticket_id", nullable = false)
 	private Ticket ticket;
 	private Integer amount;
+	private Long idProduct;
+	private double subTotal;
 }
