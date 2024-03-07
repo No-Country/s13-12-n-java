@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { MdClose,  MdCheck } from 'react-icons/md'
+import { MdClose,  MdCheck, MdFileUpload } from 'react-icons/md'
 import { InputForm, TextAreaForm, DatalistForm } from './FormComponents.jsx'
 
 export default function AddEmployeeForm() {
@@ -43,8 +43,10 @@ export default function AddEmployeeForm() {
             <p className='text-xl'>Nuevo empleado</p>
             <p className='text-base'>Ingrese la información para crear empleado</p>
             </div>
-            <div> 
-            </div>
+            <button className='bg-black px-8 flex rounded-full mx-auto justify-center items-center font-bold'> 
+            <MdFileUpload className="mr-2" size={24} />
+            Subir Imagen
+            </button>
             <InputForm label="Apellidos*" value={apellidos} setValue={setApellidos} type="text" />
             <InputForm label="Nombres*" value={nombres} setValue={setNombres} type="text" className="md:col-start-1 md:col-end-2"/>
             <InputForm label="Telefono*" value={telefono} setValue={setTelefono} type="number"/>
