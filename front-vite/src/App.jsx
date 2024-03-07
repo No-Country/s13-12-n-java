@@ -16,7 +16,6 @@ function App() {
 
   return (
     <Router>
-      {/* <div className="bg-dark-blue lg:hidden h-80 w-screen fixed top-0 z-30 rounded-b-full"></div> */}
       <div className="grid lg:grid-cols-3 xl:grid-cols-4 min-w-screen xl:max-w-screen bg-gradient-to-tl from-light-blue to-semi-white">
         {!isMobile && <Navbar Class='lg:col-span-1'></Navbar>}
         <div className="lg:col-span-2 xl:col-span-3">
@@ -29,8 +28,8 @@ function App() {
               <Route path="/sales" element={<Activity />} />
               <Route path="/orders" element={<Orders />} />
               <Route path="/human-resources" element={<HumanResources />} />
-              <Route path="/reports" element={<Activity />} />
-              <Route path="/users" element={<Register/>}/>
+              <Route path="/reports" element={<Reports />} />
+              <Route path="/register" element={<Register/>}/>
               <Route path="*" element={<h1>Error 404. Page not found</h1>}/>
             </Routes>
           </div>
