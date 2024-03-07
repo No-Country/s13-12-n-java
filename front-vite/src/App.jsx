@@ -26,7 +26,7 @@ function App() {
               <Route path="/activity" element={<Activity />} />
               <Route path="/inventory" element={<Inventory />} />
               <Route path="/sales" element={<Activity />} />
-              <Route path="/orders" element={<Activity />} />
+              <Route path="/orders" element={<Orders />} />
               <Route path="/human-resources" element={<HumanResources />} />
               <Route path="/reports" element={<Activity />} />
               <Route path="*" element={<h1>Error 404. Page not found</h1>}/>
