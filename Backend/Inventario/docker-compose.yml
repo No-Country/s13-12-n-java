@@ -29,7 +29,7 @@ services:
     container_name: "postgres_db"
     image: "postgres:latest"
     ports:
-      - "5432:5432"
+       - "5432:5432"
     networks:
        - mired
     environment:
