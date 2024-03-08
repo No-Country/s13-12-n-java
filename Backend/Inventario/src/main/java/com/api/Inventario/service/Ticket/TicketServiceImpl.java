@@ -4,7 +4,6 @@ import com.api.Inventario.model.entity.Ticket;
 import com.api.Inventario.model.entity.TicketDetails;
 import com.api.Inventario.model.dto.request.TicketRequest;
 import com.api.Inventario.model.dto.response.TicketResponse;
-import com.api.Inventario.model.enums.TipoTicketEnum;
 import com.api.Inventario.repository.SupermarketRepository;
 import com.api.Inventario.repository.TicketDetailsRepository;
 import com.api.Inventario.repository.TicketRepository;
@@ -17,7 +16,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class TicketServiceImpl extends BaseServiceImpl<TicketResponse, TicketRequest,Long,Ticket> implements ITicketService {
+public class TicketServiceImpl extends BaseServiceImpl<TicketResponse, TicketRequest,Long,Ticket>  {
 	private TicketDetailsRepository ticketDetailsRepository;
 	private TicketRepository ticketRepository;
 	private ModelMapper modelMapper;
@@ -38,7 +37,7 @@ public class TicketServiceImpl extends BaseServiceImpl<TicketResponse, TicketReq
 
 
 	@Transactional
-	public void createTicketAndDetail(TicketRequest ticketRequest) {
+	public 	TicketResponse createTicketAndDetail(TicketRequest ticketRequest) {
 		List<TicketDetails> ticketDetailsList = ticketRequest.getTicketDetails();
 		ticketRequest.setTicketDetails(null);
 		Ticket ticket = modelMapper.map(ticketRequest, Ticket.class);
@@ -62,11 +61,7 @@ public class TicketServiceImpl extends BaseServiceImpl<TicketResponse, TicketReq
 		}
 		ticketDetailsRepository.saveAll(ticketDetailsList);
 		ticket.setTicketDetails( ticketDetailsList);
-
+	  		TicketResponse response	 =	modelMapper.map(ticket,TicketResponse.class);
+			return   response;
 	}
-
-	public void restarStock() {
-
-	}
-
 }

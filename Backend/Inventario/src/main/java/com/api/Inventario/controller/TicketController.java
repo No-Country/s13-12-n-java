@@ -23,8 +23,7 @@ public class TicketController extends BaseControllerImpl<TicketResponse,TicketRe
 
 	@PostMapping("/create-ticket")
 	public ResponseEntity<TicketResponse> create(@Valid @RequestBody TicketRequest request) {
-	  service.createTicketAndDetail(request);
-		return new ResponseEntity(new MessageResponse("Created Tcket"), HttpStatus.CREATED);
+		return new ResponseEntity(service.createTicketAndDetail(request), HttpStatus.CREATED);
 	}
 
 }
