@@ -6,11 +6,9 @@ import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/auth")
 public class AuthController {
@@ -18,7 +16,7 @@ public class AuthController {
 		this.authService = authService;
 	}
 	private final AuthService authService;
-
+	@CrossOrigin("*")
     @PostMapping("login")
     public ResponseEntity<AuthResponse> login(@Valid @RequestBody LoginDto datos) {
     	try {
@@ -27,6 +25,7 @@ public class AuthController {
             return new ResponseEntity(e.getMessage(), HttpStatus.BAD_REQUEST);
         }
     }
+	@CrossOrigin("*")
     @PostMapping("registro")
     public ResponseEntity<AuthResponse> registro(@RequestBody RegistroDto datos) {
 		try {

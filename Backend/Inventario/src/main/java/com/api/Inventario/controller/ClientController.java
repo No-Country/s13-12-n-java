@@ -8,6 +8,7 @@ import com.api.Inventario.service.Client.ClientServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin("*")
 @RequestMapping("api/v1/clients")
 public class ClientController extends BaseControllerImpl<ClientResponse, ClientRequest, Long, Client, ClientServiceImpl> { //esta capa solo se comunica con la capa de servicio
 }

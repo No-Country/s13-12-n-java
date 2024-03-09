@@ -5,10 +5,12 @@ import com.api.Inventario.model.dto.request.ProviderRequest;
 import com.api.Inventario.model.dto.response.ProviderResponse;
 import com.api.Inventario.model.entity.Provider;
 import com.api.Inventario.service.Provider.ProviderServiceImpl;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@CrossOrigin("*")
 @RequestMapping("providers")
 public class ProviderController extends BaseControllerImpl<ProviderResponse, ProviderRequest, Long, Provider, ProviderServiceImpl> {
 }

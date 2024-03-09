@@ -6,12 +6,10 @@ import com.api.Inventario.model.dto.request.TiendaDeRopaRequest;
 import com.api.Inventario.model.dto.response.TiendaDeRopaResponse;
 import com.api.Inventario.service.TiendaDeRopa.TiendaDeRopaServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin("*")
 @RequestMapping("api/v1/tienda-de-ropa")
 public class TiendaDeRopaController extends BaseControllerImpl<TiendaDeRopaResponse, TiendaDeRopaRequest, Long, TiendaDeRopa, TiendaDeRopaServiceImpl> {
     @Autowired

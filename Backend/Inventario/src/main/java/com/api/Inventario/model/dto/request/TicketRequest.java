@@ -12,12 +12,13 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-@Getter @Setter
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
 public class TicketRequest {
-	private Long id ;
+	private Long id;
 	private String tipo ;
 	private String numero;
 	private LocalDate fechaEmision;
