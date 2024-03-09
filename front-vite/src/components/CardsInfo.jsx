@@ -23,7 +23,7 @@ export default function CardsInfo( {showSales, showStock, showShoppings}) {
   return (
     <div className="flex flex-col">
       {/*Desktop version*/}
-      <div className="hidden md:flex md:flex-col gap-4">
+      <div className="hidden lg:flex lg:flex-col gap-4">
         <div className={`bg-dark-blue pt-2 pb-3 px-10 rounded-lg bg-opacity-75 ${showSales ? "block" : "hidden"}`}>
           <p className="text-xl text-left text-white">Ventas</p>
           <div className="flex justify-between text-sm">
