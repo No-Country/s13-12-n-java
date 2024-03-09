@@ -16,8 +16,7 @@ import java.util.Date;
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "product")
-public class Client extends Base {
+ public class Client extends Base {
     @Column( nullable = false)
     private Date birthday;
     private String address;
