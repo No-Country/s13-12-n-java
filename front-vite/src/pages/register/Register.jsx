@@ -19,11 +19,11 @@ export default function Register() {
         password: '',
         rPassword: '',
     })
-    const baseURL = 'http://localhost:8080/swagger-ui/index.html#/'
+    const baseURL = 'http://localhost:8080'
     const onRegister = (e) => {
         e.preventDefault();
         axios 
-            .post(`${baseURL}/auth-controller/registro`, {...formState})
+            .post(`${baseURL}/auth/registro`, {...formState})
             .then((res) => {
                 let data = {
                     token: res.data,
@@ -71,7 +71,7 @@ export default function Register() {
                 </div>
                 <InputComp type="email" value={email} onChange={onEmailChange} name="email" id="email" placeholder="email@atlantisinventory.com" required={true}/>
                 <InputComp type="password" value={password} onChange={onPasswordChange} name="password" id="password" placeholder="Ingrese una contraseña" required={true}/>
-                <InputComp type="password" value={rPassword} onChange={onPasswordChange} name="rPassword" id="repeatPassword" placeholder="Repita la contraseña" required={true}/>
+                {/* <InputComp type="password" value={rPassword} onChange={onPasswordChange} name="rPassword" id="repeatPassword" placeholder="Repita la contraseña" required={true}/> */}
                 <div className='flex flex-col items-center mt-3 gap-3'>
                     <button type="submit" onClick={onRegister} className='font-medium bg-gradient-to-tl from-light-blue to-semi-white shadow-md rounded-full py-2.5 px-6 border border-black'>Crear cuenta</button>
                     <p className=''>Si ya tiene una, <span className='text-sm font-medium text-dark-blue'><Link to="/login">inicie sesión</Link></span></p>
