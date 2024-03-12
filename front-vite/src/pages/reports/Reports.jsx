@@ -123,8 +123,8 @@ export default function Reports() {
   };
 
   return (
-    <div className='w-full h-full xl:grid xl:grid-cols-3 xl:mt-5'>
-      <div className='xl:col-span-2 flex flex-col items-center lg:items-stretch'>
+    <div className='xl:grid xl:grid-cols-3 xl:mt-5'>
+      <div className='xl:col-span-2 items-center lg:items-stretch'>
         <h1 className="text-center lg:text-left text-2xl mb-2.5">Reportes</h1>
         <div className='mx-4 mb-4 flex justify-center xl:hidden'>
           <div className="carousel max-w-64 sm:max-w-lg space-x-4 lg:hidden">
