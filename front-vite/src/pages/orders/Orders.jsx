@@ -25,7 +25,7 @@ export default function Orders() {
   ]
 
   return (
-    <div className='xl:grid xl:grid-cols-3 xl:mt-5 '>
+    <div className='xl:grid xl:grid-cols-3 xl:mt-5'>
       <div className='xl:col-span-2 flex flex-col items-center lg:items-stretch'>
         <h1 className="text-center lg:text-left text-2xl mb-2.5">Pedidos</h1>
         {!isMobile && <CardsInfo showSales={false} showStock={false} showShoppings={true}/>}
