@@ -21,7 +21,7 @@ You no longer have to worry about creating your shopping list month after month 
 
 <h3 align="center"  ><b>You can check out our webpage here:</b></h3>
 <h3 align="center"><a href="https://compralisto0.vercel.app/" target="_blank" rel="noopener noreferrer"> Atlantis Inventtory </a></h3>
-<p  align="center" ><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"> <img src="https://img.shields.io/badge/Video Preview%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/></a></p>
+<p  align="center" ><a href="https://www.youtube.com/watch?v=8-mVqbQ0E4s&ab_channel=MarcosEliasPazGoncheff" target="_blank" rel="noopener noreferrer"> <img src="https://img.shields.io/badge/Video Preview%20-%23FF0000.svg?&style=for-the-badge&logo=YouTube&logoColor=white"/></a></p>
 <div align="center">
 
 <img src=https://i.postimg.cc/QNS7Ff6w/Logo-Circular.png alt="Logo Atlantis Inventtory" width=100>
